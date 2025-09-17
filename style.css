@@ -12,7 +12,8 @@ a {
 
 /* 1 ##########################################################################################3 */
 
-.wrapper-part1-2 {
+.wrapper-part1 {
+  margin: auto;
   width: 100%;
   background-color: #170a00;
 }
@@ -20,13 +21,13 @@ a {
 .part1 {
   position: fixed;
   background-color: #210a01;
-  width: 1200px;
+  width: 100%;
   margin: auto;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  left: 100px;
+  z-index: 1;
 }
 
 .part1-list {
@@ -47,6 +48,14 @@ a {
   color: #ffa228;
 }
 
+.part1-link:hover::before {
+  color: #ffa228;
+  content: '*';
+  position: relative;
+  top: 20px;
+  left: 25px;
+}
+
 .part1-but {
   width: 160px;
   height: 40px;
@@ -62,6 +71,7 @@ a {
 
 .part1-icon {
   border-radius: 50%;
+  margin-right: 50px;
 }
 
 .part1-icon:hover {
@@ -70,20 +80,14 @@ a {
 
 /* 2 ################################################################################### */
 
-.wrapper-image1 {
-position: relative;
-  background-image: url(/images/Slice\ 1.png);
-  background-repeat: no-repeat;
-  margin: auto;
-  height: 100vh;
-}
 
 .part2 {
+  background-image: url(/images/Slice\ 1.png);
   position: relative;
   width: 1200px;
   margin: auto;
-  padding: 20px 20px;
-  top: 200px;
+  padding: 20px 65px;
+  top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,8 +141,8 @@ position: relative;
 
 .part2-circle1 {
   position: absolute;
-  margin-left: 85px;
-  margin-top: 110px;
+  margin-left: 200px;
+  margin-top: 120px;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -153,8 +157,9 @@ position: relative;
   box-shadow: 0px 0px 10px 0px #fe9c1c;
 }
 
-.part2-img1 {
-  margin-left: -30px;
+.part2-video {
+  width: 500px;
+  
 }
 
 .part2-buts {
